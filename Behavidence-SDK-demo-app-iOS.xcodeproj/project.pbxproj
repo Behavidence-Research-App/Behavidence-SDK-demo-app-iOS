@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6528C0BC2C4FD9CC0013B529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6528C0BB2C4FD9CC0013B529 /* AppDelegate.swift */; };
+		6528C0C02C4FE5460013B529 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6528C0BF2C4FE5460013B529 /* README.md */; };
 		65C8E1612C4FC9C0004638BB /* Behavidence_SDK_demo_app_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C8E1602C4FC9C0004638BB /* Behavidence_SDK_demo_app_iOSApp.swift */; };
 		65C8E1632C4FC9C0004638BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C8E1622C4FC9C0004638BB /* ContentView.swift */; };
 		65C8E1652C4FC9C2004638BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C8E1642C4FC9C2004638BB /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		6528C0BB2C4FD9CC0013B529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6528C0BF2C4FE5460013B529 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		65C8E15D2C4FC9C0004638BB /* Behavidence-SDK-demo-app-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Behavidence-SDK-demo-app-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C8E1602C4FC9C0004638BB /* Behavidence_SDK_demo_app_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavidence_SDK_demo_app_iOSApp.swift; sourceTree = "<group>"; };
 		65C8E1622C4FC9C0004638BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		65C8E1542C4FC9C0004638BB = {
 			isa = PBXGroup;
 			children = (
+				6528C0BF2C4FE5460013B529 /* README.md */,
 				65C8E17C2C4FCF3C004638BB /* Alamofire.framework */,
 				65C8E1782C4FCEE7004638BB /* BehavidenceSDK.framework */,
 				65C8E15F2C4FC9C0004638BB /* Behavidence-SDK-demo-app-iOS */,
@@ -161,6 +164,7 @@
 			files = (
 				65C8E1862C4FD55D004638BB /* CustomCodeSigningEntitlements.plist in Resources */,
 				65C8E1682C4FC9C2004638BB /* Preview Assets.xcassets in Resources */,
+				6528C0C02C4FE5460013B529 /* README.md in Resources */,
 				65C8E1652C4FC9C2004638BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
