@@ -1,0 +1,185 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios15.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BehavidenceSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Alamofire
+import BackgroundTasks
+@_exported import BehavidenceSDK
+import CommonCrypto
+import CoreMotion
+import CryptoKit
+import Foundation
+import SensorKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct EventSensor : Swift.Codable {
+  public init(start: Swift.Int64, end: Swift.Int64, type: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CallSensor : Swift.Codable {
+  public let start: Swift.Int64
+  public let end: Swift.Int64
+  public let duration: Swift.Int
+  public let contacts: Swift.Int
+  public let outgoing: Swift.Int
+  public let incoming: Swift.Int
+  public let starttime: Swift.String
+  public let endtime: Swift.String
+  public init(start: Swift.Int64, end: Swift.Int64, duration: Swift.Int, contacts: Swift.Int, outgoing: Swift.Int, incoming: Swift.Int, starttime: Swift.String, endtime: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class BLEventAppSensor : Swift.Codable, Swift.CustomStringConvertible, Swift.Equatable {
+  final public let startGroup: Foundation.Date
+  final public let start: Foundation.Date
+  final public let end: Foundation.Date
+  final public let type: Swift.String
+  final public let category: Swift.String
+  final public let timezone: Swift.String
+  public var startTimestamp: Swift.Int {
+    get
+  }
+  public var endTimestamp: Swift.Int {
+    get
+  }
+  public init(startGroup: Foundation.Date, start: Foundation.Date, end: Foundation.Date, type: Swift.String, category: Swift.String, timezone: Swift.String)
+  public func markUploaded()
+  public var description: Swift.String {
+    get
+  }
+  public static func == (lhs: BehavidenceSDK.BLEventAppSensor, rhs: BehavidenceSDK.BLEventAppSensor) -> Swift.Bool
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class EventsContext {
+  public static let `default`: BehavidenceSDK.EventsContext
+  public var eventsPedo: [BehavidenceSDK.EventSensor] {
+    get
+  }
+  public var recordedPickup: [BehavidenceSDK.Point] {
+    get
+  }
+  public func clearActivities()
+  public func clearPickups()
+  public func addKeytime(_ point: BehavidenceSDK.Point)
+  public func addPickup(_ point: BehavidenceSDK.Point)
+  public func addActivity(_ activity: CoreMotion.CMMotionActivity, start: Swift.Int64?, end: Swift.Int64?)
+  @objc deinit
+}
+public class DayUsage : Swift.Codable {
+  public var array: [BehavidenceSDK.DeviceUsageSample]
+  public init(array: [BehavidenceSDK.DeviceUsageSample])
+  public func getCount() -> Swift.Int
+  public func getArray() -> [BehavidenceSDK.DeviceUsageSample]
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class BehavidenceSDK {
+  public static func Setup(_ completion: @escaping (_ error: Swift.String?, _ loggedIn: Swift.Bool) -> Swift.Void)
+  public static func GetScores(_ completion: @escaping (_ data: [Swift.String : Any]?) -> Swift.Void)
+  public static func GetAllScores(_ completion: @escaping (_ data: [[Swift.String : Any]]?) -> Swift.Void)
+  public static func SetApiKey(key: Swift.String)
+  public static func Refresh()
+  @objc deinit
+}
+public struct UploadationToken : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UploadationTracking : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageSensor : Swift.Codable {
+  public let start: Swift.Int64
+  public let contacts: Swift.Int
+  public let outgoing: Swift.Int
+  public let incoming: Swift.Int
+  public init(start: Swift.Int64, end: Swift.Int64, contacts: Swift.Int, outgoing: Swift.Int, incoming: Swift.Int, starttime: Swift.String, endtime: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol SensorManagerDelegate : AnyObject {
+  func permissionsGranted(granted: Swift.Bool)
+  func onNewData()
+  func onNewAppLogsRawDataRetrieved(recordsCount: Swift.UInt)
+  func onNewAppLogsNoRawDataRetrieved()
+  func onNewAppLogsDataAfterFiltering(recordsCount: Swift.UInt)
+  func onNewAppLogsNoDataAfterFiltering()
+  func onIPhone(value: Swift.Bool)
+}
+@objc @_hasMissingDesignatedInitializers public class SensorManager : ObjectiveC.NSObject {
+  weak public var delegate: (any BehavidenceSDK.SensorManagerDelegate)?
+  final public let usage: BehavidenceSDK.SensorUsage
+  public static func makeInstance(useEmulator: Swift.Bool) -> BehavidenceSDK.SensorManager?
+  public var currentTime: Foundation.TimeInterval {
+    get
+  }
+  public func getlastAuthorizationStatus() -> Swift.Bool?
+  public func start()
+  public func refresh()
+  public func bgTaskFetchSensorkitData(_ callback: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+extension BehavidenceSDK.SensorManager : BehavidenceSDK.SensorUsageDelegate {
+  public func onIPhone(value: Swift.Bool)
+  public func onNewAppLogsRawNoDataRetrieved()
+  public func onNoDataAfterFiltering()
+  public func onDataAfterFiltering(recordsCount: Swift.UInt)
+  public func onNewAppLogsRawDataRetrieved(recordsCount: Swift.UInt)
+  public func sensorUsageOnData()
+}
+extension Swift.Array where Element == BehavidenceSDK.BLEventAppSensor {
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol SensorUsageDelegate : AnyObject {
+  func sensorUsageOnData()
+  func onNewAppLogsRawDataRetrieved(recordsCount: Swift.UInt)
+  func onNewAppLogsRawNoDataRetrieved()
+  func onDataAfterFiltering(recordsCount: Swift.UInt)
+  func onNoDataAfterFiltering()
+  func onIPhone(value: Swift.Bool)
+}
+@objc @_hasMissingDesignatedInitializers public class SensorUsage : ObjectiveC.NSObject {
+  public func reset()
+  public func itemsToUpload(limit: Swift.UInt?) -> [BehavidenceSDK.BLEventAppSensor]
+  public func sevenDayItems() -> [BehavidenceSDK.BLEventAppSensor]
+  public func markUploaded(items: [BehavidenceSDK.BLEventAppSensor])
+  public func fetchDataInBackground(_ callback: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
+  public func markUploadedBG(items: [BehavidenceSDK.BLEventAppSensor])
+  @objc deinit
+}
+extension BehavidenceSDK.SensorUsage : SensorKit.SRSensorReaderDelegate {
+  @objc dynamic public func sensorReaderWillStartRecording(_ reader: SensorKit.SRSensorReader)
+  @objc dynamic public func sensorReader(_ reader: SensorKit.SRSensorReader, startRecordingFailedWithError error: any Swift.Error)
+  @objc dynamic public func sensorReader(_ reader: SensorKit.SRSensorReader, didCompleteFetch fetchRequest: SensorKit.SRFetchRequest)
+  @objc dynamic public func sensorReader(_ reader: SensorKit.SRSensorReader, didFetch devices: [SensorKit.SRDevice])
+  @objc dynamic public func sensorReader(_ reader: SensorKit.SRSensorReader, fetching fetchRequest: SensorKit.SRFetchRequest, didFetchResult result: SensorKit.SRFetchResult<Swift.AnyObject>) -> Swift.Bool
+  @objc dynamic public func sensorReader(_ reader: SensorKit.SRSensorReader, fetching fetchRequest: SensorKit.SRFetchRequest, failedWithError error: any Swift.Error)
+  @objc dynamic public func sensorReader(_ reader: SensorKit.SRSensorReader, fetchDevicesDidFailWithError error: any Swift.Error)
+  @objc dynamic public func sensorReader(_ reader: SensorKit.SRSensorReader, stopRecordingFailedWithError error: any Swift.Error)
+}
+public class Point {
+  public var x: Swift.Double
+  public var y: Swift.Double
+  public var z: Swift.Double
+  public init(x: Swift.Double, y: Swift.Double, z: Swift.Double)
+  @objc deinit
+}
+public class DeviceUsageSample : Swift.Codable {
+  public var start: Swift.Int64
+  public var end: Swift.Int64
+  public var catagory: Swift.String
+  public init(start: Swift.Int64, end: Swift.Int64, catagory: Swift.String)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}

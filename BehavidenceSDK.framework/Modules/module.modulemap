@@ -1,0 +1,11 @@
+framework module BehavidenceSDK {
+  umbrella header "BehavidenceSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module BehavidenceSDK.Swift {
+  header "BehavidenceSDK-Swift.h"
+  requires objc
+}
