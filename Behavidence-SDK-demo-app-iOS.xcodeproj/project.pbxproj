@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		6528C0BC2C4FD9CC0013B529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6528C0BB2C4FD9CC0013B529 /* AppDelegate.swift */; };
 		6528C0C02C4FE5460013B529 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6528C0BF2C4FE5460013B529 /* README.md */; };
+		6594CABD2C57D55F00937279 /* BehavidenceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6594CABB2C57D4CD00937279 /* BehavidenceSDK.framework */; };
+		6594CABE2C57D55F00937279 /* BehavidenceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6594CABB2C57D4CD00937279 /* BehavidenceSDK.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		65C8E1612C4FC9C0004638BB /* Behavidence_SDK_demo_app_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C8E1602C4FC9C0004638BB /* Behavidence_SDK_demo_app_iOSApp.swift */; };
 		65C8E1632C4FC9C0004638BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C8E1622C4FC9C0004638BB /* ContentView.swift */; };
 		65C8E1652C4FC9C2004638BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C8E1642C4FC9C2004638BB /* Assets.xcassets */; };
 		65C8E1682C4FC9C2004638BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C8E1672C4FC9C2004638BB /* Preview Assets.xcassets */; };
-		65C8E17A2C4FCF0B004638BB /* BehavidenceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C8E1782C4FCEE7004638BB /* BehavidenceSDK.framework */; };
-		65C8E17B2C4FCF0B004638BB /* BehavidenceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65C8E1782C4FCEE7004638BB /* BehavidenceSDK.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		65C8E17E2C4FCF50004638BB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C8E17C2C4FCF3C004638BB /* Alamofire.framework */; };
 		65C8E17F2C4FCF50004638BB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65C8E17C2C4FCF3C004638BB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		65C8E1862C4FD55D004638BB /* CustomCodeSigningEntitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65C8E1852C4FD55D004638BB /* CustomCodeSigningEntitlements.plist */; };
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				65C8E17B2C4FCF0B004638BB /* BehavidenceSDK.framework in Embed Frameworks */,
+				6594CABE2C57D55F00937279 /* BehavidenceSDK.framework in Embed Frameworks */,
 				65C8E17F2C4FCF50004638BB /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -38,12 +38,12 @@
 /* Begin PBXFileReference section */
 		6528C0BB2C4FD9CC0013B529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6528C0BF2C4FE5460013B529 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6594CABB2C57D4CD00937279 /* BehavidenceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BehavidenceSDK.framework; sourceTree = "<group>"; };
 		65C8E15D2C4FC9C0004638BB /* Behavidence-SDK-demo-app-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Behavidence-SDK-demo-app-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C8E1602C4FC9C0004638BB /* Behavidence_SDK_demo_app_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavidence_SDK_demo_app_iOSApp.swift; sourceTree = "<group>"; };
 		65C8E1622C4FC9C0004638BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65C8E1642C4FC9C2004638BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65C8E1672C4FC9C2004638BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		65C8E1782C4FCEE7004638BB /* BehavidenceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BehavidenceSDK.framework; sourceTree = "<group>"; };
 		65C8E17C2C4FCF3C004638BB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		65C8E1842C4FD25A004638BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65C8E1852C4FD55D004638BB /* CustomCodeSigningEntitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomCodeSigningEntitlements.plist; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C8E17A2C4FCF0B004638BB /* BehavidenceSDK.framework in Frameworks */,
+				6594CABD2C57D55F00937279 /* BehavidenceSDK.framework in Frameworks */,
 				65C8E17E2C4FCF50004638BB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 			children = (
 				6528C0BF2C4FE5460013B529 /* README.md */,
 				65C8E17C2C4FCF3C004638BB /* Alamofire.framework */,
-				65C8E1782C4FCEE7004638BB /* BehavidenceSDK.framework */,
+				6594CABB2C57D4CD00937279 /* BehavidenceSDK.framework */,
 				65C8E15F2C4FC9C0004638BB /* Behavidence-SDK-demo-app-iOS */,
 				65C8E15E2C4FC9C0004638BB /* Products */,
 			);

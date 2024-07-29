@@ -84,6 +84,9 @@ public class DayUsage : Swift.Codable {
   public static func Setup(_ completion: @escaping (_ error: Swift.String?, _ loggedIn: Swift.Bool) -> Swift.Void)
   public static func GetScores(_ completion: @escaping (_ data: [Swift.String : Any]?) -> Swift.Void)
   public static func GetAllScores(_ completion: @escaping (_ data: [[Swift.String : Any]]?) -> Swift.Void)
+  public static func AssociateUserToCode(code: Swift.String, _ completion: @escaping (_ error: Swift.String?) -> Swift.Void)
+  public static func GetAssociations(_ completion: @escaping (_ data: [[Swift.String : Any]]?) -> Swift.Void)
+  public static func DisassociateUserFromCode(associationID: Swift.String, _ completion: @escaping (_ error: Swift.String?) -> Swift.Void)
   public static func SetApiKey(key: Swift.String)
   public static func Refresh()
   @objc deinit

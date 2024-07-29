@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/Pods_BehavidenceSDK.framework/Pods_BehavidenceSDK</key>
 		<data>
-		OijiCoXbQfOsp4uGkoRnWVXyCec=
+		+mx7l0nhhkQEdhDyOEDbIPUn6pM=
 		</data>
 		<key>Frameworks/Pods_BehavidenceSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -34,27 +34,27 @@
 		</data>
 		<key>Modules/BehavidenceSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		lXa0iJ1Ot3kmmL2wTB77LAD5VVM=
+		9zjrfcxB3ZLhJS2kwvagbCwN45o=
 		</data>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		jV7Yw7X5TpShMMF37lDMKDPhRJo=
+		eS4wsTsurSjxr/b4GhzXfPqyZ84=
 		</data>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		78uLvLY9LtE4Ksmd2rz0um5EfHw=
+		vAdgPMHqnwwvwcz689C8F1aCqls=
 		</data>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		EZufvolSkdfAMTrQ7Xgs+FDyKn0=
+		dCB6E22BD530rSDUdMH5v+e/Dos=
 		</data>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		78uLvLY9LtE4Ksmd2rz0um5EfHw=
+		vAdgPMHqnwwvwcz689C8F1aCqls=
 		</data>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		D+Gz/tZPfhLcC5Rq3qKUw4840r0=
+		ksU4qhI7WJfHpQqgIE9O5ZM99IU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n604cNP5uubtj1SmmX3jUiWP7LIj7iSmTpsbI+6YQCE=
+			4rIRaEpBFqxbVpmYwCEgmVvFKc8TSMxwK6NOW599uWg=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_BehavidenceSDK.framework/_CodeSignature/CodeResources</key>
@@ -109,42 +109,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z2b6/HISwdeC6hY1+HWozxPj3m3bGbXpLKNfL2STfyA=
+			9lVRExi/o+tpUuxcwruGYC7DxSO4CgGg8BVYqFXK4Xk=
 			</data>
 		</dict>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dvIn0dzTg1UR3KngrD64HnV6QhAebY+K9+KddgDk6So=
+			iijXh0HXKN/qqQIT4AN31+h2X6mXn2sY4dPAoGSKAk8=
 			</data>
 		</dict>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ST6a4CxMSh+4b6mSDHhFv+O/6iIEKbO8fpI/8I4Zsk=
+			zy3NXdAWcNytKg1UHrgZSZD0v1U+6Z/TnWadDUG3Auc=
 			</data>
 		</dict>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hsSbIsVRGWR010eIANfl6I5rluaUyb5rcgbJMMbehEE=
+			RyWwCKpZp8QEtTZScOm6TJC8MAP2PlPNQSmiqoU3XeA=
 			</data>
 		</dict>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ST6a4CxMSh+4b6mSDHhFv+O/6iIEKbO8fpI/8I4Zsk=
+			zy3NXdAWcNytKg1UHrgZSZD0v1U+6Z/TnWadDUG3Auc=
 			</data>
 		</dict>
 		<key>Modules/BehavidenceSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hc0QSsxuRRfFjox+UEMDM8xjbBoIkJP9T3Wx1dpwPco=
+			TUJ0BqhSDyCDYzQCZT0mMqKduMc8mNTojrsL3L+12mQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
